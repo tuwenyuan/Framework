@@ -1,5 +1,5 @@
 # Framework
-android 项目基本框架搭建 集合了mvp+retrofit+rxjava
+android 项目基本框架搭建 整合了mvp+retrofit+rxjava
 
 ![framework](https://github.com/tuwenyuan/Framework/blob/master/111111.gif)
 
