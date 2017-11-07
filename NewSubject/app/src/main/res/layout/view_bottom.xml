@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_rg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp"
+    android:background="#0000ff"
+    android:paddingTop="10dp">
+    <RadioButton
+        android:id="@+id/content_rb_home"
+        style="@style/tab_style"
+        android:checked="true"
+        android:drawableTop="@drawable/tab_sy_selector"
+        android:text="首页"/>
+
+    <RadioButton
+        android:id="@+id/content_rb_news"
+        style="@style/tab_style"
+        android:drawableTop="@drawable/tab_gwc_selector"
+        android:text="购物车"/>
+
+    <RadioButton
+        android:id="@+id/content_rb_hd"
+        style="@style/tab_style"
+        android:drawableTop="@drawable/tab_hd_selector"
+        android:text="活动"/>
+
+    <RadioButton
+        android:id="@+id/content_rb_cf"
+        style="@style/tab_style"
+        android:drawableTop="@drawable/tab_cf_selector"
+        android:text="财富"/>
+
+    <RadioButton
+        android:id="@+id/content_rb_wd"
+        style="@style/tab_style"
+        android:drawableTop="@drawable/tab_wd_selector"
+        android:text="我的"/>
+</RadioGroup>
