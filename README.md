@@ -1,6 +1,8 @@
 # Framework
 android 项目基本框架搭建 集合了mvp+retrofit+rxjava
 
+![framework](https://github.com/tuwenyuan/Framework/blob/master/111111.gif)
+
 #### 这样就完成了一次网络请求数据（包含了加载中视图 空视图 错误视图的处理）
 
     public void loadNetData(){
