@@ -81,7 +81,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     public abstract int getLayoutId();
 
-    public void RequestData(Observable observable, final OnBackListener listener){
+    public void requestData(Observable observable, final OnBackListener listener){
         netRequestWork.RequestData(observable, new NetRequestWork.OnRequestListener() {
             @Override
             public void onRecvDataBack(Object o) {

@@ -104,7 +104,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     public void loadNetData(){
         showLoading(true);
-        RequestData(mService.getPageData1(1, 20, null, 32), new OnBackListener<PageDataBean>() {
+        requestData(mService.getPageData1(1, 20, null, 32), new OnBackListener<PageDataBean>() {
             @Override
             public void onNext(PageDataBean dataBean) {
                 hideLoading();
