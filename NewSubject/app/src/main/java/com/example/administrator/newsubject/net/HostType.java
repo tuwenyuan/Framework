@@ -20,4 +20,6 @@ public class HostType {
     public static final int SSB = 3;
     @HostTypeChecker
     public static final int UGOU = 4;
+    @HostTypeChecker
+    public static final int TWY = 5;
 }

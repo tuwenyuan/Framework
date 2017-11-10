@@ -1,20 +1,15 @@
 package com.example.administrator.newsubject.net;
 
-import android.text.TextUtils;
 import android.util.SparseArray;
 
 import com.example.administrator.newsubject.BuildConfig;
 import com.example.administrator.newsubject.utils.FileUtil;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.Cache;
-import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 
@@ -112,6 +107,8 @@ public class RetrofitManager {
                 return ApiManagerService.SSB;
             case HostType.UGOU:
                 return ApiManagerService.UGOU;
+            case HostType.TWY:
+                return ApiManagerService.TWY;
             default:
                 return null;
         }

@@ -1,12 +1,7 @@
 package com.example.administrator.newsubject.base;
 
-import android.app.Activity;
 import android.app.Application;
 import android.os.Handler;
-import android.os.Process;
-
-import java.util.LinkedList;
-import java.util.List;
 /**
  * @author 涂文远
  * @version $Rev$
@@ -28,6 +23,8 @@ public class BaseApplication extends Application {
         super.onCreate();
         instance = this;
         mHandler = new Handler();
+
+        CrashHandler.getInstance().init(this);
     }
 
     /**

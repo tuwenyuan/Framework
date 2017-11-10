@@ -1,6 +1,7 @@
 package com.example.administrator.newsubject.net;
 
 import com.example.administrator.newsubject.exception.CustomDataException;
+
 import rx.functions.Func1;
 
 /**
@@ -27,4 +28,11 @@ public class HttpResultFunc<T> implements Func1<HttpResult,T> {
         }
     }
 }
+
+/*public class HttpResultFunc<T> implements Func1<Object,T> {
+    @Override
+    public T call(Object httpResult) {
+        return (T)httpResult;
+    }
+}*/
 

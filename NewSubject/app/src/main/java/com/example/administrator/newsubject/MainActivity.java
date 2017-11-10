@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.example.administrator.newsubject.adapter.MainPageAdapter;
 import com.example.administrator.newsubject.base.BaseActivity;
+import com.example.administrator.newsubject.base.CrashHandler;
 import com.example.administrator.newsubject.entity.PageDataBean;
 import com.example.administrator.newsubject.view.TitleView;
 
@@ -52,6 +53,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void initData() {
         mVp.setAdapter(new MainPageAdapter(getSupportFragmentManager()));
         mVp.setCurrentItem(0);
+
+        CrashHandler.getInstance().sendPreviousReportsToServer();
+
     }
 
     @Override
@@ -98,6 +102,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 loadNetData();
                 break;
             case R.id.btn_loading_2:
+                int i = 10/0;
                 break;
         }
     }
